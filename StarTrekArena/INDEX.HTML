@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale-1">
+    <title>The Star Trek Game</title>
+    
+    <script src = "js/gamemanager.js"></script>
+    <script src = "js/player.js"></script>
+    <script src = "js/enemy.js"></script>
+    <link rel= "stylesheet" href = "styles.css">
+
+</head>
+<body>
+
+    <div class = "header">
+        <p>You've seen the show, now play the game!</p>
+        <h2>Choose your class</h2>
+    </div>
+    <div class = "interface">
+        <a href = "#" onclick = "GameManager.setGameStart('Human')">
+            <img src="img/player-icons/human.jpg" alt = "human" width = "20%">
+            <div>
+                <h3>Human</h3>
+                <p>The classic. A founding species of the Federation. Known for their adaptability, morals, and open-mindedness. Low strength, high agility, medium intelligence</p>
+            </div>
+        </a>
+
+         <a href = "#"  onclick = "GameManager.setGameStart('Vulcan')">
+            <img src="img/player-icons/vulcan.jpg" alt = "vulcan" width = "20%">
+            <div>
+                <h3>Vulcan</h3>
+                <p>The first alien species our to contact our world. Know for their logic and supposed lack of emotion. Medium strength, low agility, high intelligence.</p>
+            </div>
+        </a>
+
+         <a href = "#"  onclick = "GameManager.setGameStart('Klingon')">
+            <img src="img/player-icons/klingon.jpg" alt = "klingon" width = "20%">
+            <div>
+                <h3>Klingon</h3>
+                <p>A warrior species known for their strong attachment to tradition and honour. High strength, medium agility, low intelligence</p>
+            </div>
+        </a>
+
+    </div>
+    <div class = "actions">
+
+
+    </div>
+    <div class = "arena">
+
+
+    </div>
+    <div class = "enemy">
+
+
+    </div>
+
+
+
+
+
+</body>
+</htmL>

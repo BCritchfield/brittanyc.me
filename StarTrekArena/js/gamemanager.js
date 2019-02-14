@@ -4,6 +4,7 @@ let  GameManager = {
         this.resetPlayer(classType);
         this.setPreFight();
     },
+    //player classes
     resetPlayer: function(classType) {
         switch(classType) {
             case "Human":
@@ -16,6 +17,7 @@ let  GameManager = {
             player = new Player(classType, 100, 100, 100, 100);
             break;
         }
+        //change interface once selected
         let getInterface = document.querySelector(".interface");
         getInterface.innerHTML = '<img src = "img/player-icons/' + 
         classType.toLowerCase() + '.jpg" class="img-avatar"><div><h3>' + classType +
@@ -24,6 +26,7 @@ let  GameManager = {
         '</p><p>Agility: ' + player.agility + 
         '</p><p>Phaser Power: ' + player.phaserPower + '</p>';
     },
+    //set up arena
     setPreFight: function(){
         let getHeader = document.querySelector(".header");
         let getActions = document.querySelector(".actions");
@@ -34,7 +37,7 @@ let  GameManager = {
         getArena.style.visibility = "visible";
 
     },
-    
+    //set up the fight section
     setFight: function() {
         let getHeader = document.querySelector(".header");
         let getActions = document.querySelector(".actions");
@@ -53,6 +56,7 @@ let  GameManager = {
                 enemy = enemy1;
                 break;
         }
+        //"Choose Your Move" Section
         getHeader.innerHTML = '<p>Task: Choose your move</p>';
         getActions.innerHTML = '<a href = "#" class = "btn-prefight" onclick = "PlayerMoves.calcAttack()">Attack!</a>';
         getEnemy.innerHTML = '<img src = "img/enemy-icons/' + enemy.enemyType.toLowerCase() + '.jpg" alt = "' + enemy.enemyType + 
